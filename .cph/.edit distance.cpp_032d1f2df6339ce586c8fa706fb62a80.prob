@@ -1,0 +1,1 @@
+{"name":"Local: edit distance","url":"/Users/raisa/Desktop/CPAlgorithm/edit distance.cpp","tests":[{"id":1753034180893,"input":"LOVE\nMOVIE","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/raisa/Desktop/CPAlgorithm/edit distance.cpp","group":"local","local":true}
