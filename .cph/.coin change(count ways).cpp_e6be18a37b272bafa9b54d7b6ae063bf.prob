@@ -1,0 +1,1 @@
+{"name":"Local: coin change(count ways)","url":"/Users/raisa/Desktop/CPAlgorithm/coin change(count ways).cpp","tests":[{"id":1756496644668,"input":"3 4\n1 2 3","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/raisa/Desktop/CPAlgorithm/coin change(count ways).cpp","group":"local","local":true}

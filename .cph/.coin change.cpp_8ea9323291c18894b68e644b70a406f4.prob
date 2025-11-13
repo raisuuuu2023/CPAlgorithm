@@ -1,0 +1,1 @@
+{"name":"Local: coin change","url":"/Users/raisa/Desktop/CPAlgorithm/coin change.cpp","tests":[{"id":1754145568317,"input":"3 11\n1 5 7","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/raisa/Desktop/CPAlgorithm/coin change.cpp","group":"local","local":true}

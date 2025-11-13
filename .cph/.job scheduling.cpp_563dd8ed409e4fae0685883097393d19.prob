@@ -1,0 +1,1 @@
+{"name":"Local: job scheduling","url":"/Users/raisa/Desktop/CPAlgorithm/job scheduling.cpp","tests":[{"id":1762699226863,"input":"5\n2 100\n1 19\n2 27\n1 25\n3 15","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/raisa/Desktop/CPAlgorithm/job scheduling.cpp","group":"local","local":true}

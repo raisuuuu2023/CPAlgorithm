@@ -1,0 +1,1 @@
+{"name":"Local: minimizing coins","url":"/Users/raisa/Desktop/CPAlgorithm/minimizing coins.cpp","tests":[{"id":1754146343225,"input":"3 11\n1 5 7","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/raisa/Desktop/CPAlgorithm/minimizing coins.cpp","group":"local","local":true}

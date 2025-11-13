@@ -1,32 +1,32 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
+#include<cstring>
 using namespace std;
-long long knapsack(int W,vector<int>&w, vector<long long>& v,int idx,vector<vector<long long>>& memo)
+long long dp[110][100010];
+long long knapsack(int idx,int w,vector<int>&weight,vector<long long>&val)
 {
+    if(w==0) return 0;
     if(idx<0) return 0;
-    if(memo[W][idx]!=-1) return memo[W][idx];
-    if(w[idx]>W)
+    if(dp[idx][w]!=-1) return dp[idx][w];
+    long long ans=knapsack(idx-1,w,weight,val);
+    if(w-weight[idx]>=0)
     {
-        memo[W][idx]=knapsack(W,w,v,idx-1,memo);
+        ans=max(ans,val[idx]+knapsack(idx-1,w-weight[idx],weight,val));
     }
-    else
-    {
-        memo[W][idx]=max(v[idx]+knapsack(W-w[idx],w,v,idx-1,memo),knapsack(W,w,v,idx-1,memo));
-    }
-    return memo[W][idx];
+    return dp[idx][w]=ans;
 }
 int main()
 {
-    int N,W;
-    cin>>N>>W;
-    vector<int>w(N);
-    vector<long long>v(N);
-    for(int i=0;i<N;i++)
+    int n,w;
+    cin>>n>>w;
+    vector<int>weight(n);
+    vector<long long>val(n);
+    memset(dp,-1,sizeof(dp));
+    for(int i=0;i<n;i++)
     {
-        cin>>w[i]>>v[i];
+        cin>>weight[i]>>val[i];
     }
-    vector<vector<long long>>memo(W+1,vector<long long>(N,-1));
-    long long ans=knapsack(W,w,v,N-1,memo);
-    cout<<ans<<"\n";
+    cout<<knapsack(n-1,w,weight,val);
     return 0;
 }
