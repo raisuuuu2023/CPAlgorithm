@@ -1,11 +1,9 @@
 #include<iostream>
 using namespace std;
-int main()
+long long numberofDivisors(long long n)
 {
-    long long n;
-    cin>>n;
-    int count=0;
     long long ans=1;
+    long long count=0;
     while(n%2==0)
     {
         count++;
@@ -15,14 +13,20 @@ int main()
     for(int i=3;i*i<=n;i+=2)
     {
         count=0;
-        while(n%3==0)
-        {
-            count++;
-            n/=i;
-        }
-        ans*=(count+1);
+            while(n%i==0)
+            {
+                count++;
+                n/=i;
+            }
+            ans*=(count+1);
     }
     if(n>1) ans*=2;
-    cout<<ans<<"\n";
+    return ans;
+}
+int main()
+{
+    long long n;
+    cin>>n;
+    cout<<numberofDivisors(n)<<"\n";
     return 0;
 }
