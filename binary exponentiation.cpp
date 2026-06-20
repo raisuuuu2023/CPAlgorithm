@@ -10,7 +10,6 @@ long long binaryExponentiation(long long a,long long b,long long m)
      else{
         return (res*res)%m;
      }
-
 }
 int main()
 {

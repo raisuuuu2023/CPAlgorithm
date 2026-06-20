@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int primeFactorization(int n)
+void primeFactorization(int n)
 {
      while(n%2==0)
      {
